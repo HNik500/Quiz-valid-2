@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-gray-300">
+  
+  <div class="w-[500px] h-[600px] bg-white text-black mx-[30%] my-[2%] rounded-l pl-2">
+    <h1 class="py-4 font-bold text-xl mx-3">Contact Us</h1>
+  <form action=""  name="" onsubmit="return validateForm()" method="post">
+    <div class="flex gap-5 flex-wrap">
+    <div>
+    <label for="fname">First Name:</label><br>
+    <div class="border-[1.5px] border-gray-400 rounded-lg w-[200px] pt-1 pl-2">
+    <input type="text" id="fname" name="fname" required><br>
+  </div>
+</div>
+<div class="">
+  <label for="lname">Last Name:</label><br>
+  <div class="border-[1.5px] border-gray-400 rounded-lg w-[200px] pt-1 pl-2">
+  <input type="text" id="lname" name="lname" required><br>
+</div>
+</div>
+
+<div class="">
+  <label for="Myemail">Email Address</Address></label><br>
+  <div class="border-[1.5px] border-gray-400 rounded-lg w-[410px] pt-1 pl-2">
+  <input type="email" id="Myemail" name="Myemail" class="w-[90px]" required><br>
+</div>
+</div>
+
+<div class="">
+  <h5 class="pb-3 ">Query type</h5>
+  <div  class="inline border-2 border-gray-400 py-2 px-12 rounded-xl">
+  <input type="radio" name="Qtype" id="General Enquiry" value="General Enquiry">
+  <label for="General Enquiry">General Enquiry</label>
+</div>
+<div class="inline border-2 border-gray-400 py-2 px-12 rounded-xl ml-2">
+  <input type="radio" name="Qtype" id="Support Enquiry" value="Support Enquiry">
+  <label for="General Enquiry">Support Enquiry</label>
+</div>
+</div>
+
+
+  <h4 class="block">message</h4>
+  <div class="py-1 border-[1px] border-black rounded-xl w-[30rem]">
+<textarea name="message" cols="40" rows="3" class="px-[3.2rem] mx-1.5 ">
+</textarea>
+</div>
+<div class="">
+<input type="checkbox" id="op0" name="op0" value="MyOp0">
+<label for="op0">I consent to being contacted by the team</label>
+</div>
+
+
+<button class="bg-[#00695c] w-[30rem] py-3 border-1 rounded-md mt-16 text-lg text-white font-semibold">submit</button>
+</div>
+  </form>
+</div>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
